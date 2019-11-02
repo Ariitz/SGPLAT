@@ -1,0 +1,39 @@
+ActionBar{
+  background-color: #3A58C8;
+} 
+
+
+button{
+  margin-top: 15%;
+}
+
+label{
+  margin-left: 20%;
+}
+.font-awesome {
+  font-family: "FontAwesome";
+  color: black;
+  font-family: "fontawesome-webfont";
+  font-size: 100%;
+  margin-top: 20%;
+  margin-left: 20%;
+  text-align: center
+}
+
+.imagenAudio {
+  color: black;
+  font-size: 200%;
+  margin-left: 10%;
+  text-align: center
+}
+
+#play{
+  color: green;
+}
+
+#next{
+  color: blue;
+}
+
+
+

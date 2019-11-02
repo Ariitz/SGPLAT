@@ -1,0 +1,44 @@
+ActionBar{
+  background-color: #3A58C8;
+} 
+
+
+image{
+  margin: 40ex
+}
+
+
+button{
+  margin-top: 5%;
+}
+
+
+.font-awesome {
+  font-family: "FontAwesome";
+  color: black;
+  font-family: "fontawesome-webfont";
+  font-size: 50%;
+  margin-left: 10%;
+  text-align: center
+}
+
+label{
+  margin-left: 10%;
+}
+
+#record{
+  color: red;
+}
+
+#stop{
+  color: black;
+}
+
+#listen{
+  color: #1F5473;
+}
+
+#send{
+  margin-left: 10%;
+  color: blue;
+}

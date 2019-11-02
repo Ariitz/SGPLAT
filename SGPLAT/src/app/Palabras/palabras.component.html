@@ -1,0 +1,22 @@
+
+    <ActionBar title="SGPLAT"
+    color="#FFFFFF">
+    </ActionBar>
+
+
+
+    <StackLayout class="form" orientation="horizontal">
+    
+        <Image src="~/app/images/audio.jpg" class="imagenAudio"></Image>
+        <StackLayout orientation="vertical">
+            
+            <button class="font-awesome" text="&#xf144;" id="play" (tap)="playRemoteFile()"
+            height="120" width="120">  </button>
+            <label text="Escuchar"></label>
+            
+            <button class="font-awesome" text="&#xf101;" id="next" [nsRouterLink]="
+            ['/palabrasg']" height="120" width="120"></button>
+            <label text="Siguiente" (tap)="sig()"></label>
+        </StackLayout>
+    
+    </StackLayout>

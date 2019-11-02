@@ -1,0 +1,38 @@
+
+    <ActionBar title="SGPLAT"
+    color="#FFFFFF">
+    </ActionBar>
+
+
+    <FlexboxLayout>
+        <StackLayout class="form">
+            <Image src="~/app/images/PLAT.png"></Image>
+            <Label text="INGRESE SUS DATOS" textAlignment="center"></Label>
+            <TextField hint="Correo" keyboardType="email" autocorrect="false"
+                autocapitalizationType="none" [(ngModel)]='email'
+                ></TextField>
+            <TextField hint="Contraseña" [(ngModel)]='pw' secure="true"></TextField>
+            <Button text="Entrar" color="#FFFFFF" (tap)="submit()"
+                ></Button>
+        </StackLayout>
+
+    </FlexboxLayout>
+
+
+    <!--
+        <FlexboxLayout>
+            <StackLayout>
+                <Image src="~/images/PLAT.png"/>
+                <Label text="INGRESE SUS DATOS" textAlignment="center"/>
+
+                <TextField hint="Correo" keyboardType="email"
+                    autocorrect="false" autocapitalizationType="none"
+                    v-model="email"/>
+                <TextField hint="Contraseña" v-model="pw" secure="true"/>
+
+                <Button text="Record New Sounds" @tap="goToRecord" />
+
+            </StackLayout>
+
+        </FlexboxLayout>
+    -->

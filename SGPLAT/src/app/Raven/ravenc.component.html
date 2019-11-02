@@ -1,0 +1,30 @@
+<ActionBar title="SGPLAT" color="#FFFFFF"> </ActionBar>
+
+
+
+<StackLayout class="form" orientation="horizontal">
+    <StackLayout orientation="vertical">
+        <Image src="~/app/images/r41.png" width="600" height="450"></Image>
+    </StackLayout>
+
+    <StackLayout orientation="vertical">
+        <StackLayout orientation="horizontal">
+            <Image src="~/app/images/r42.png" [nsRouterLink]="['/ravenci']"
+                width="150" height="110"></Image>
+            <Image src="~/app/images/r43.png" [nsRouterLink]="['/ravenci']" 
+                width="150" height="110"></Image>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+            <Image src="~/app/images/r44.png" [nsRouterLink]="['/ravenci']" (tap)="sub()"
+                width="150" height="110"></Image>
+            <Image src="~/app/images/r45.png" [nsRouterLink]="['/ravenci']" 
+                width="150" height="110"></Image>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+            <Image src="~/app/images/r46.png" [nsRouterLink]="['/ravenci']" 
+                width="150" height="110"></Image>
+            <Image src="~/app/images/r47.png" [nsRouterLink]="['/ravenci']" 
+                width="150" height="110"></Image>
+        </StackLayout>
+    </StackLayout>
+</StackLayout>

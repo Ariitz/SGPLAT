@@ -1,0 +1,38 @@
+<ActionBar title="SGPLAT" color="#FFFFFF"> </ActionBar>
+
+
+
+<StackLayout class="form" orientation="horizontal">
+    <StackLayout orientation="vertical">
+        <Image src="~/app/images/r11.png" width="600" height="450"
+            class="ip"
+        ></Image>
+    </StackLayout>
+
+    <StackLayout orientation="vertical">
+        <StackLayout orientation="horizontal">
+            <Image src="~/app/images/r12.png" [nsRouterLink]="['/ravend']" 
+                width="150" height="110"
+                class="op"></Image>
+            <Image src="~/app/images/r13.png" [nsRouterLink]="['/ravend']"
+                width="150" height="110"
+                class="op"></Image>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+            <Image src="~/app/images/r14.png" [nsRouterLink]="['/ravend']"
+                width="150" height="110"
+                class="op"></Image>
+            <Image src="~/app/images/r15.png" [nsRouterLink]="['/ravend']"
+                width="150" height="110" (tap)="sub()"
+                class="op"></Image>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+            <Image src="~/app/images/r16.png" [nsRouterLink]="['/ravend']"
+                width="150" height="110"
+                class="op"></Image>
+            <Image src="~/app/images/r17.png" [nsRouterLink]="['/ravend']"
+                width="150" height="110"
+                class="op"></Image>
+        </StackLayout>
+    </StackLayout>
+</StackLayout>

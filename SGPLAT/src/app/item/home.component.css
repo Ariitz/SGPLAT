@@ -1,0 +1,51 @@
+ActionBar{
+  background-color: #3A58C8;
+} 
+
+Image {
+  margin-bottom: 20;
+  height: 70;
+}
+
+
+FlexboxLayout {
+  justify-content: center;
+  align-items: center;
+  background-size: cover; 
+  /*background-image: url("~/images/background.jpg");
+   background-color: #B9EEFE;*/
+}
+
+StackLayout {
+  width: 400;
+  padding: 10 16;
+  /*background-color: #B9EEFE;*/
+}
+
+Button{
+   background-color:  #3A58C8;
+}
+ 
+.far {
+  font-family: Font Awesome 5 Free, fa-regular-400;
+  font-weight: 400; 
+  font-family: "FontAwesome";
+}
+
+.fab {
+  font-family: Font Awesome 5 Brands, fa-brands-400;
+  font-weight: 400; 
+  font-family: "FontAwesome";
+}
+
+.fas {
+  font-family: Font Awesome 5 Free, fa-solid-900;
+  font-weight: 900; 
+  font-family: "FontAwesome";
+}
+
+.font-awesome {
+  font-family: "FontAwesome";
+  color: black;
+  font-family: "fontawesome-webfont"
+}

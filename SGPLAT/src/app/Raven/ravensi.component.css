@@ -1,0 +1,15 @@
+ActionBar{
+  background-color: #3A58C8;
+} 
+
+
+
+FlexboxLayout {
+  justify-content: center;
+  align-items: center;
+  background-size: cover; 
+}
+
+image {
+  margin: 10;
+}
