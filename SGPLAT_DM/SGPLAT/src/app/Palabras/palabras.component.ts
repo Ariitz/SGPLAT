@@ -259,13 +259,14 @@ export class PalabrasComponent extends Observable  {
      * PLAY REMOTE AUDIO FILE
      */
     public playRemoteFile(args) {
-      console.log('playRemoteFile');
+      /*console.log('playRemoteFile');
       this.audio = Math.floor(Math.random()*(8-1)+1);
 
       
       const filepath = 'http://nanodevelopment.com.mx/Palabras/'+this.audio+'.mp3';
   
-      this.playAudio(filepath, 'remoteFile');
+      this.playAudio(filepath, 'remoteFile');*/
+      playRemoteFile(args);
     }
   
     public resumePlayer() {

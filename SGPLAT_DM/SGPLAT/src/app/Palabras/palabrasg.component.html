@@ -1,4 +1,4 @@
-<!--
+
 <ActionBar title="SGPLAT"
 color="#FFFFFF">
 </ActionBar>
@@ -17,15 +17,15 @@ color="#FFFFFF">
         <label text="Play"></label>
         
     </StackLayout>
-    < !--<label class="font-awesome" text="&#xf1d8;" id="send" [@tap]="save"  [nsRouterLink]="
+    <!--<label class="font-awesome" text="&#xf1d8;" id="send" [@tap]="save"  [nsRouterLink]="
     ['/pruebas']"></label>>-->
-    <!--<button text="Guardar" (tap)="upload()" height="120" width="120"></button>-- >
+    <!--<button text="Guardar" (tap)="upload()" height="120" width="120"></button>-->
     <button class="font-awesome" height="120" width="120" text="&#xf1d8;" id="send"
     (tap)="upload()"   [nsRouterLink]="
     ['/pruebas']"></button>>
-    <label text="Fin"></label>-->
+    <label text="Fin"></label>
 
-
+    
     <GridLayout rows="3*,10, 2*, auto" columns="*, *, *">
         <ListView colSpan="3" [items]="tasks">
             <ng-template let-item="item">
@@ -50,6 +50,6 @@ color="#FFFFFF">
         <Button row="3" col="1" margin="2" text="Error-Up!" (tap)="upload_error($event)"></Button>
         <Button row="3" col="2" margin="2" text="MultiPart-Up!" (tap)="upload_multi($event)"></Button>
     </GridLayout>
-<!--</StackLayout>-->
+</StackLayout>
 
 

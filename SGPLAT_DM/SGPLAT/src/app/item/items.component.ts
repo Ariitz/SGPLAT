@@ -46,7 +46,7 @@ export class HomeComponent implements OnInit {
             dialogs.alert("correo no valido");
         }*/
         
-        getString("http://10.0.0.10:8080/rest/LogPaciente/"+this.email+"/"+this.pw).then((r: string) => {
+        getString("http://192.168.100.3:8080/rest/LogPaciente/"+this.email+"/"+this.pw).then((r: string) => {
 
             if (r=="entra"){
                 this.routerExtensions.navigate(['/pruebas'])

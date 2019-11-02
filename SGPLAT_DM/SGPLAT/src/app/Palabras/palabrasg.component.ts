@@ -116,15 +116,13 @@ public tasks: bgHttp.Task[] = [];
 
 //ENVIAR AUDIO
 //this.file = fs.path.normalize(fs.knownFolders.currentApp().path + "/home/bigpic.jpg");
-//this.file = `~/audio/recording.${this.platformExtension()}`;
-//this.file = fs.path.normalize(fs.knownFolders.currentApp().path + "/images/10.jpg");
-this.file= "/Pictures/Twitter/im.jpg"
+this.file = `~/audio/recording.${this.platformExtension()}`;
 
             // NOTE: This works for emulator. Real device will need other address.
-            this.url = "http://10.0.0.10:8082/uploadFile";
+            this.url = "http://192.168.100.3:8082/uploadFile";
 
 
-        this.session = bgHttp.session("image-upload");
+        this.session = bgHttp.session("file-upload");
 
 
 
@@ -390,7 +388,7 @@ this.file= "/Pictures/Twitter/im.jpg"
 
   private platformExtension() {
     // 'mp3'
-    return `${app.android ? 'mp3' : 'caf'}`;
+    return `${app.android ? 'm4a' : 'caf'}`;
   }
 
   private async _startDurationTracking(duration) {
@@ -411,6 +409,11 @@ this.file= "/Pictures/Twitter/im.jpg"
     }
   }
 
+  public pruebasgo(){
+    getString("http://192.168.100.3:8080/rest/intento/up?edo=no%20realizada&corPac="+correo+"&nomPru=palabras&fechaI=1/11/2019").then((r: String) =>{
+      dialogs.alert("Prueba finalizada");
+  });
+  }
 
 
 
@@ -427,7 +430,7 @@ upload(args) {
 
   dialogs.alert("Espere hasta que se le diga que la prueba finalizó para realizar otra prueba o cerrar la aplicacion")
 
-  /*const name = this.file.substr(this.file.lastIndexOf("/") + 1);
+  const name = this.file.substr(this.file.lastIndexOf("/") + 1);
   const description = `${name} (${++this.counter})`;
   const request = {
       url: this.url,
@@ -474,12 +477,10 @@ upload(args) {
   task.on("responded", onEvent.bind(this));
   task.on("complete", onEvent.bind(this));
   lastEvent = "";
-  this.tasks.push(task);*/
-
-  this.start_upload(false, false);
+  this.tasks.push(task);
 
   
-  getString("http://10.0.0.10:8080/rest/intento/up?edo=no%20realizada&corPac="+correo+"&nomPru=palabras&fechaI=2/11/2019").then((r: String) =>{
+  getString("http://192.168.100.3:8080/rest/intento/up?edo=no%20realizada&corPac="+correo+"&nomPru=palabras&fechaI=1/11/2019").then((r: String) =>{
       dialogs.alert("Prueba finalizada");
   });
 
@@ -501,11 +502,12 @@ start_upload(should_fail, isMulti) {
   const name = this.file.substr(this.file.lastIndexOf("/") + 1);
   const description = `${name} (${++this.counter})`;
   const request = {
-      url: "http://10.0.0.10:8082/uploadFile",
+      url: this.url,
       method: "POST",
       headers: {
           "Content-Type": "application/octet-stream",
           "File-Name": name,
+          "file": name
       },
       description: description,
       androidAutoDeleteAfterUpload: true,

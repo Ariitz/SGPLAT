@@ -79,7 +79,7 @@ export class RavendiComponent implements OnInit {
         //dialogs.alert("Fecha: "+this.date);
         //dialogs.alert("dia"+this.date.getDay);
 
-        getString("http://10.0.0.10:8080/rest/intento/up?edo=no%20realizada&corPac="+correo+"&nomPru=raven&aciertos="+this.score+"&fechaI=2/11/2019").then((r: String) =>{
+        getString("http://192.168.100.3:8080/rest/intento/up?edo=no%20realizada&corPac="+correo+"&nomPru=raven&aciertos="+this.score+"&fechaI=1/11/2019").then((r: String) =>{
             dialogs.alert("Prueba finalizada");
         });
     }
@@ -112,7 +112,7 @@ export class RavendiComponent implements OnInit {
         if (score9==1) {
             this.score++;
         }
-        getString("http://10.0.0.10:8080/rest/intento/up?edo=no%20realizada&corPac="+correo+"&nomPru=raven&aciertos="+this.score+"&fechaI=2/11/2019").then((r: String) =>{
+        getString("http://192.168.100.3:8080/rest/intento/up?edo=no%20realizada&corPac="+correo+"&nomPru=raven&aciertos="+this.score+"&fechaI=1/11/2019").then((r: String) =>{
             dialogs.alert("Prueba finalizada");
         });
 

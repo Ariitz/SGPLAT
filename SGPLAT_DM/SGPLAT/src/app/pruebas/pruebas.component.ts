@@ -21,7 +21,7 @@ export class PruebasComponent implements OnInit {
     }
 
     ravengo(){
-        getString("http://10.0.0.10:8080/rest/intento/"+correo+"/raven").then((r: string) => {
+        getString("http://192.168.100.3:8080/rest/intento/"+correo+"/raven").then((r: string) => {
 
             if (r=="existe"){
                 this.routerExtensions.navigate(['/raven'])
@@ -39,7 +39,7 @@ export class PruebasComponent implements OnInit {
 
     palabrasgo(){
 
-        getString("http://10.0.0.10:8080/rest/intento/"+correo+"/palabras").then((r: string) => {
+        getString("http://192.168.100.3:8080/rest/intento/"+correo+"/palabras").then((r: string) => {
 
             if (r=="existe"){
                 this.routerExtensions.navigate(['/palabras'])
